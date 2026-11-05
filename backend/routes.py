@@ -54,6 +54,7 @@ def update_picture(id):
             data[index] = incoming
             return jsonify(incoming), 200
     return jsonify(message="picture not found"), 404
+    
 
 
 @app.route("/picture/<int:id>", methods=["DELETE"])
